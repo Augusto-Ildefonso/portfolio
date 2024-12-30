@@ -1,0 +1,231 @@
+*{
+    line-height: 30px;
+}
+
+.jersey-25-regular {
+    font-family: "Jersey 25", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.AboutMePage p{
+    color: #fff;;
+}
+
+.AboutMePage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ContentArea{
+    display: flex;
+    width: 1222px;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.ContentArea article{
+    width: 100%;
+    height: 100%;
+    margin-top: 55px;
+}
+
+.Introduction{
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 15px;
+}
+
+#TitleAboutMePage {
+    width: 730px;
+    font-size: 60px;
+    align-self: flex-start;
+    color: #B9EEE9;
+}
+
+#TextHomePage {
+    margin-top: 36px;
+    width: 700px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+#LinkCV {
+    width: 205px;
+    margin-top: 50px;
+    color: #B9EEE9;
+    display: block;
+    transition: 0.3s;
+}
+
+#LinkCV:hover {
+    color: #fff;
+    transition: 0.3s;
+}
+
+.LinkIcon {
+    margin-left: 5px;
+    width: 20px;
+    height: 20px;
+    fill: #B9EEE9;
+    transition: 0.3s;
+}
+
+.ImageAreaIntroduction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ImageBackgroundAboutMePage{
+    width: 370px;
+    height: 370px;
+    border-radius: 50%;
+    background-color: #0F162A;
+    overflow: hidden;
+    box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+.AvatarImage {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.ButtonContainer {
+    display: flex;
+    width: 550px;
+    justify-content: space-between;
+}
+
+.SocialsCard {
+    margin-top: 25px;
+}
+
+.SeeMore {
+    width: 1222px;
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.SeeMore span h1{
+    text-align: center;
+}
+
+.ArrowIcon {
+    color: #fff;
+    margin-top: 20px;
+    width: 54px;
+    height: 54px;
+}
+
+.History {
+    width: 1222px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 1222px;
+    text-align: justify;
+    row-gap: 50px;
+}
+
+.en{
+    font-size: 49px;
+    color: #B9EEE9;
+}
+
+.pt{
+    font-size: 38px;
+    color: #B9EEE9;
+}
+
+.FirstSteps {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    text-align: justify;
+    gap: 20px;
+}
+
+.FirstSteps p{
+    margin-top: 20px;
+}
+
+.FirstSteps .Text {
+    width: 65%;
+}
+
+.ImageHistory1 {
+    width: 45%;
+    height: 500px;
+    margin-left: 20px;
+}
+
+.ImageHistory2 {
+    width: 90%;
+    height: auto;
+    margin-left: 20px;
+}
+
+.ImageHistory3 {
+    width: 45%;
+    height: auto;
+    margin-left: 20px;
+}
+
+.MyExperience {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    text-align: justify;
+    gap: 20px;
+}
+
+.MyExperience p{
+    margin-top: 20px;
+}
+
+.TechStack {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    text-align: left;
+    gap: 20px;
+}
+
+.TechStack ul {
+    margin: 20px 0 0 0;
+    padding: 0 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 20px;
+    list-style-type: circle;
+    list-style-position: initial;
+}
+
+.TechStack li{
+    margin-left: 0px;
+}

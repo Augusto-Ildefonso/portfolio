@@ -1,0 +1,97 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.HomeNav {
+    margin-top: 5px;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.HomeNav ul{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: last baseline;
+}
+
+.HomeNav li{
+    margin-left: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    list-style: none;
+}
+
+.HomeNav a {
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.HomeNav li a:hover {
+    scale: 1.3;
+    transition: 0.5s;
+}
+
+.HomeNav li a:active {
+    scale: 0.9;
+    transition: 0.5s;
+}
+
+.HomeNav ul li p {
+    font-size: 10px;
+    color: #B9EEE9;
+}
+
+.ListElement{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Icons {
+    width: 40px;
+    height: 40px;
+    color: #fff;
+}
+
+.SelectLanguage {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.TextLanguage {
+    font-size: 36px;
+}
+
+.CurrentlyLanguage{
+    color: #B9EEE9;
+    transition: 0.3s;
+}
+
+.TextLanguage a:hover{
+    transition: 0.3s;
+    color: #0F162A;
+}
+
+.TextLanguage a:active{
+    transition: 0.2s;
+    color: #B9EEE9;
+}
+
+.OtherLanguage{
+    color: #fff;
+}
+

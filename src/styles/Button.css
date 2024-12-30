@@ -1,0 +1,37 @@
+.jersey-25-regular {
+    font-family: "Jersey 25", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.Button {
+    width: 237px;
+    height: 61px;
+    padding: 3px;
+    background-color: #d9d9d9;
+    box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    color: #1D2951;
+    font-size: 25px;
+}
+
+.Button:hover {
+    scale: 1.1;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.Button:active {
+    scale: 0.9;
+    transition: 0.3s;
+}
+
+.Button a{
+    text-decoration: none;
+    color: #1D2951;
+}
