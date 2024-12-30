@@ -1,7 +1,7 @@
 {
   "name": "website-portifolio",
   "version": "0.1.0",
-  "homepage": "https://github.com/Augusto-Ildefonso/augusto-ildefonso-portifolio",
+  "homepage": "https://Augusto-Ildefonso.github.io/augusto-ildefonso-portifolio",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
