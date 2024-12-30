@@ -3,7 +3,6 @@ import '../styles/Home.css'
 import Button from '../components/Button/Button'
 import NavBar from "../components/NavBar/NavBar";
 import {Helmet} from "react-helmet";
-import { ReactTyped } from "react-typed";
 
 export default function HomePT () {
     return (
@@ -16,10 +15,7 @@ export default function HomePT () {
 
                 <article className="ContentArticle">
                     <div className='ContentLeft'>
-                        <ReactTyped
-                            strings={["<h1 id='TitleHomePage'>Olá!<br/>Eu sou o <em>Augusto</em>.</h1>"]}
-                            typeSpeed={40}
-                        />
+                        <h1 id='TitleHomePage'>Olá!<br/>Eu sou o <em>Augusto</em>.</h1>
                         <p id='TextHomePage'>Eu sou um programador apaixonado por engenharia de software e
                             desenvolvimento de software</p>
 
@@ -30,7 +26,7 @@ export default function HomePT () {
                     </div>
 
                     <div className='ContentRight'>
-                        <img src="images/Avatar.png" alt="Avatar" className="AvatarImage"/>
+                    <img src="images/Avatar.png" alt="Avatar" className="AvatarImage"/>
                     </div>
 
                 </article>

@@ -3,7 +3,6 @@ import '../styles/Home.css'
 import Button from '../components/Button/Button'
 import NavBar from "../components/NavBar/NavBar";
 import { Helmet } from 'react-helmet'
-import {ReactTyped} from "react-typed";
 
 export default function Home () {
     return (
@@ -18,10 +17,7 @@ export default function Home () {
                 <article className="ContentArticle">
 
                     <div className='ContentLeft'>
-                        <ReactTyped
-                            strings={["<h1 id='TitleHomePage'>Hi!<br/>I'm <em>Augusto</em>.</h1>"]}
-                            typeSpeed={40}
-                        />
+                        <h1 id='TitleHomePage'>Hi!<br/>I'm <em>Augusto</em>.</h1>
                         <p id='TextHomePage'>I am a programmer passionate about software engineering and software
                             development.</p>
                         <div className="ButtonContainer">
@@ -30,7 +26,7 @@ export default function Home () {
                         </div>
                     </div>
                     <div className="ContentRight">
-                        <img src="images/Avatar.png" alt="Avatar" className="AvatarImage"/>
+                    <img src="images/Avatar.png" alt="Avatar" className="AvatarImage"/>
                     </div>
 
 
