@@ -16,10 +16,6 @@ export default function SocialsCard() {
             <a href='https://medium.com/@afildefonso16' target="_blank">
                 <AiFillMediumSquare className="Icon"/>
             </a>
-
-            <a href='#' target="_blank">
-                <AiFillGoogleCircle className="Icon"/>
-            </a>
         </div>
     );
 }
