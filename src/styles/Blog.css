@@ -1,36 +1,110 @@
-.BlogPage{
+.BlogPage {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-bottom: 20px;
 }
 
-.ContentArea{
-    display: flex;
-    width: 1222px;
-    height: 100%;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: nowrap;
+@media only screen and (min-width: 1500px) {
+    .ContentAreaBlogPage{
+        display: flex;
+        width: 65%;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+
+    .PageTitleBlog{
+        font-size: 60px;
+        align-self: flex-start;
+        margin-top: 55px;
+        color: #B9EEE9;
+    }
+
+    .BlogCardsArea {
+        width: 100%;
+        height: 100%;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        column-gap:50px;
+        row-gap: 20px;
+    }
 }
 
-.PageTitle{
-    font-size: 60px;
-    align-self: flex-start;
-    margin-top: 55px;
-    color: #B9EEE9;
+@media only screen and (min-width: 600px) and (max-width: 1499px) {
+    .ContentAreaBlogPage{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+
+    .PageTitleBlog{
+        font-size: 60px;
+        align-self: center;
+        margin-top: 55px;
+        color: #B9EEE9;
+    }
+
+    .BlogCardsArea {
+        width: 100%;
+        height: 100%;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        column-gap:50px;
+        row-gap: 20px;
+    }
 }
 
-.BlogCardsArea {
-    width: 1222px;
-    height: 100%;
-    margin-top: 30px;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    column-gap:50px;
-    row-gap: 20px;
+@media only screen and (max-width: 599px) {
+    .ContentAreaBlogPage{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+
+    .PageTitleBlog{
+        font-size: 60px;
+        align-self: center;
+        margin-top: 55px;
+        color: #B9EEE9;
+    }
+
+    .BlogCardsArea {
+        width: 100%;
+        height: 100%;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        column-gap:50px;
+        row-gap: 20px;
+    }
+
+    .NoPostsTitle {
+        justify-self: center;
+        text-align: center;
+    }
 }
+
+
