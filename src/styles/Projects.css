@@ -1,36 +1,106 @@
 .ProjectsPage{
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-bottom: 20px;
 }
 
-.ContentArea{
-    display: flex;
-    width: 1222px;
-    height: 100%;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: nowrap;
+@media only screen and (min-width: 1500px) {
+    .ContentAreaProjectPage{
+        display: flex;
+        width: 65%;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .ProjectsPageTitle {
+        font-size: 60px;
+        align-self: flex-start;
+        margin-top: 55px;
+        color: #B9EEE9;
+    }
+
+    .CardsArea {
+        width: 100%;
+        height: 100%;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        column-gap: 50px;
+        row-gap: 20px;
+    }
 }
 
-.PageTitle{
-    font-size: 60px;
-    align-self: flex-start;
-    margin-top: 55px;
-    color: #B9EEE9;
+@media only screen and (min-width: 600px) and (max-width: 1499px) {
+    .ContentAreaProjectPage{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+
+    .ProjectsPageTitle{
+        width: 100%;
+        height: 100%;
+        font-size: 60px;
+        align-self: center;
+        text-align: center;
+        margin-top: 55px;
+        color: #B9EEE9;
+    }
+
+    .CardsArea {
+        margin-top: 35px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        row-gap: 20px;
+    }
 }
 
-.CardsArea {
-    width: 1222px;
-    height: 100%;
-    margin-top: 30px;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    column-gap: 50px;
-    row-gap: 20px;
+@media only screen and (max-width: 599px) {
+    .ContentAreaProjectPage{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+
+    .ProjectsPageTitle{
+        width: 100%;
+        height: 100%;
+        font-size: 45px;
+        align-self: center;
+        text-align: center;
+        margin-top: 55px;
+        color: #B9EEE9;
+    }
+
+    .CardsArea {
+        margin-top: 35px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        row-gap: 20px;
+    }
 }

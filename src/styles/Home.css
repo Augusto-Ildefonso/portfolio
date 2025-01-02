@@ -1,6 +1,211 @@
 *{
     margin:0;
-    padding:0;
+    padding: 0;
+}
+
+.HomePage{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.HomePage em{
+    font-style: normal;
+    color: #B9EEE9;
+}
+
+@media only screen and (max-width: 599px){
+    .ContentArticleMobile {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .ButtonContainer {
+        max-width: 70%;
+        margin-top: 20px;
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        word-break: break-all;
+        row-gap: 30px;
+    }
+
+    #TitleHomePage {
+        width: 100%;
+        align-self: flex-start;
+        text-align: center;
+    }
+
+    #TitleHomePage h1{
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    #TextHomePage{
+        margin-top: 20px;
+        width: 90%;
+        height: 100%;
+        text-align: center;
+    }
+
+    #TextHomePage p {
+        font-size: 20px;
+    }
+
+    .AvatarImage {
+        max-width: 300px;
+        max-height: 300px;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1499px){
+    .ContentAreaHomePage{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .ContentAreaHomePage .ContentArticle{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 36px;
+    }
+
+    #TitleHomePage {
+        width: 100%;
+        align-self: flex-start;
+        text-align: center;
+    }
+
+    #TitleHomePage h1{
+        font-size: 40px;
+        line-height: 70px;
+    }
+
+    #TextHomePage{
+        width: 90%;
+        height: 100%;
+        text-align: center;
+    }
+
+    #TextHomePage p {
+        font-size: 20px;
+    }
+
+    .AvatarImage {
+        min-width: 400px;
+        min-height: 400px;
+        margin-bottom: -30px;
+    }
+}
+
+@media only screen and (min-width: 1500px){
+    .HomePage{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .HomePage p{
+        color: #fff;;
+    }
+
+    .HomePage em{
+        font-style: normal;
+        color: #B9EEE9;
+    }
+
+    .ContentAreaHomePage {
+        display: flex;
+        width: 65%;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .ContentAreaHomePage .ContentArticle{
+        margin-top: 10%;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        column-gap: 1%;
+    }
+
+    .ContentAreaHomePage .ContentLeft {
+        width: 69.5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        row-gap: 36px;
+    }
+
+    .ContentAreaHomePage .ContentRight {
+        align-self: flex-end;
+        width: 29.5%;
+        min-width: 400px;
+        height: 400px;
+    }
+
+    #TitleHomePage {
+        width: 100%;
+        font-size: 40px;
+        line-height: 70px;
+        align-self: flex-start;
+    }
+
+    .HomePage .ContentArea em{
+        color: #B9EEE9;
+    }
+
+    #TextHomePage{
+        width: 100%;
+        height: 100%;
+    }
+
+    #TextHomePage p {
+        font-size: 20px;
+    }
+
+    .ButtonContainer {
+        width: 100%;
+        height: 100%;
+        align-self: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        word-break: break-all;
+    }
+
+    .AvatarImage {
+        min-width: 400px;
+        min-height: 400px;
+    }
 }
 
 .jersey-25-regular {
@@ -9,77 +214,5 @@
     font-style: normal;
 }
 
-.HomePage p{
-    color: #fff;;
-}
-
-.HomePage em{
-    font-style: normal;
-    color: #B9EEE9;
-}
-
-.HomePage{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.ContentArea{
-    display: flex;
-    width: 1222px;
-    height: 100%;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.ContentArticle{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-.ContentLeft {
-    width: 60%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-}
-
-.ContentRight {
-    width: 400px;
-    height: 400px;
-}
-
-#TitleHomePage {
-    font-size: 60px;
-    line-height: 70px;
-    align-self: flex-start;
-}
-
-.ContentArea em{
-    color: #B9EEE9;
-}
-
-#TextHomePage{
-    margin-top: 36px;
-    font-size: 20px;
-}
-
-.ButtonContainer {
-    margin-top: 30px;
-    width: 100%;
-    height: 100%;
-    align-self: center;
-    justify-content: space-between;
-}
-
-.AvatarImage {
-    width: 100%;
-    height: 100%;
-}
 
 

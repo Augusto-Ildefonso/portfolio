@@ -22,6 +22,8 @@
 
 .Button:hover {
     scale: 1.1;
+    color: #1D2951;
+    background-color: #B9EEE9;
     transition: 0.3s;
     cursor: pointer;
 }

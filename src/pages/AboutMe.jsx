@@ -20,7 +20,7 @@ export default function AboutMe() {
                         <h1 id='TitleAboutMePage'>
                             About me
                         </h1>
-                        <p id='TextHomePage'>My name is Augusto Fernandes Ildefonso and I am a computer science student
+                        <p id='TextAboutMePage'>My name is Augusto Fernandes Ildefonso and I am a computer science student
                             with
                             experience in web applications and mobile apps. I am an avid learner and diligent programmer
                             who
