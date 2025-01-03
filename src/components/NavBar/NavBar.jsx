@@ -95,6 +95,7 @@ export default function NavBar (props) {
                         </div>
                     </div>
                 )}
+
             {isLanguageMenu && (
                 <React.Fragment>
                     <div className='TitleNavBarMobile'>
@@ -117,7 +118,7 @@ export default function NavBar (props) {
 
                             <li>
                                 <Link to={props.currentPage.includes('pt') ? '/projectspt' : '/projects'} onClick={ChangeMenu}>
-                                    <p style={{color: props.currentPage.includes('projects') ? '#B9EEE9' : 'fff'}}>Projects</p>
+                                    <p style={{color: props.currentPage.includes('projects') ? '#B9EEE9' : 'fff'}}>{props.currentPage.includes('pt') ? 'Projetos' : 'Projects'}</p>
                                 </Link>
                             </li>
 
@@ -129,13 +130,13 @@ export default function NavBar (props) {
 
                             <li>
                                 <Link to={props.currentPage.includes('pt') ? '/aboutmept' : '/aboutme'} onClick={ChangeMenu}>
-                                    <p style={{color: props.currentPage.includes('aboutme') ? '#B9EEE9' : 'fff'}}>About me</p>
+                                    <p style={{color: props.currentPage.includes('aboutme') ? '#B9EEE9' : 'fff'}}>{props.currentPage.includes('pt') ? 'Sobre mim' : 'About me'}</p>
                                 </Link>
                             </li>
 
                             <li>
                                 <Link to={props.currentPage.includes('pt') ? '/contactpt' : '/contact'} onClick={ChangeMenu}>
-                                    <p style={{color: props.currentPage.includes('contact') ? '#B9EEE9' : 'fff'}}>Contact me</p>
+                                    <p style={{color: props.currentPage.includes('contact') ? '#B9EEE9' : 'fff'}}>{props.currentPage.includes('pt') ? 'Me contate' : 'Contact me'}</p>
                                 </Link>
                             </li>
 
