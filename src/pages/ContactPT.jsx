@@ -3,11 +3,16 @@ import Navbar from '../components/NavBar/NavBar';
 import '../styles/Contact.css'
 import emailjs from '@emailjs/browser'
 import {Helmet} from "react-helmet";
+import {useMediaQuery} from "react-responsive";
 
 export default function Contact() {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [description, setDescription] = useState('');
+
+    const isBigScreen = useMediaQuery({query: 'only screen and (min-width: 1500px)'});
+    const isMediumScreen = useMediaQuery({query: 'only screen and (min-width: 600px) and (max-width: 1499px)'});
+    const isSmallScreen = useMediaQuery({query: 'only screen and (max-width: 599px)'});
 
     const sendEmail = async (event) => {
         event.preventDefault();
@@ -28,49 +33,149 @@ export default function Contact() {
     return (
         <div className="ContactPage">
             <Helmet>
-                <title>Contact Me | Augusto Ildefonso</title>
+                <title>Me contate | Augusto Ildefonso</title>
             </Helmet>
-            <Navbar currentPage="contactpt" />
-            <div className="Content">
-                <h1>Me contate</h1>
 
-                <div className="FormsArea">
-                    <form className="ContactForm" onSubmit={sendEmail}>
-                        <label className="jersey-25-regular">Seu Nome</label>
-                        <input
-                            type="text"
-                            placeholder="Digite aqui..."
-                            value={name}
-                            onChange={(e) => setName(e.target.value)}
-                        />
-                        <label className="jersey-25-regular" style={{marginTop: '15px'}}>Seu Email</label>
-                        <input
-                            type="email"
-                            placeholder="ex: augusto@gmail.com"
-                            value={email}
-                            onChange={(e) => setEmail(e.target.value)}
-                        />
+            {isBigScreen && (
+                <React.Fragment>
+                    <Navbar currentPage="contactpt" />
+                    <div className="ContentContactPage">
+                        <h1>Me contate</h1>
 
-                        <label className="jersey-25-regular" style={{marginTop: '15px'}}>O que você quer construir?</label>
-                        <textarea
-                            type="text"
-                            placeholder="Digite aqui..."
-                            className="Description"
-                            value={description}
-                            onChange={(e) => setDescription(e.target.value)}
-                        />
+                        <div className="FormsArea">
+                            <form className="ContactForm" onSubmit={sendEmail}>
+                                <label className="jersey-25-regular">Seu Nome</label>
+                                <input
+                                    type="text"
+                                    placeholder="Digite aqui..."
+                                    value={name}
+                                    onChange={(e) => setName(e.target.value)}
+                                />
+                                <label className="jersey-25-regular" style={{marginTop: '15px'}}>Seu Email</label>
+                                <input
+                                    type="email"
+                                    placeholder="ex: augusto@gmail.com"
+                                    value={email}
+                                    onChange={(e) => setEmail(e.target.value)}
+                                />
 
-                        <div className="SubmitButton">
-                            <input
-                                type="submit"
-                                value="Enviar"
-                            />
+                                <label className="jersey-25-regular" style={{marginTop: '15px'}}>O que você quer construir?</label>
+                                <textarea
+                                    type="text"
+                                    placeholder="Digite aqui..."
+                                    className="Description"
+                                    value={description}
+                                    onChange={(e) => setDescription(e.target.value)}
+                                />
+
+                                <div className="SubmitButton">
+                                    <input
+                                        type="submit"
+                                        value="Enviar"
+                                    />
+                                </div>
+
+                            </form>
                         </div>
 
-                    </form>
-                </div>
+                    </div>
+                </React.Fragment>
+            )}
 
-            </div>
+            {isMediumScreen && (
+                <React.Fragment>
+                    <Navbar currentPage="contactpt" />
+                    <div className="ContentContactPage">
+                        <h1>Me contate</h1>
+
+                        <div className="FormsArea">
+                            <form className="ContactForm" onSubmit={sendEmail}>
+                                <label className="jersey-25-regular">Seu Nome</label>
+                                <input
+                                    type="text"
+                                    placeholder="Digite aqui..."
+                                    value={name}
+                                    onChange={(e) => setName(e.target.value)}
+                                />
+                                <label className="jersey-25-regular" style={{marginTop: '15px'}}>Seu Email</label>
+                                <input
+                                    type="email"
+                                    placeholder="ex: augusto@gmail.com"
+                                    value={email}
+                                    onChange={(e) => setEmail(e.target.value)}
+                                />
+
+                                <label className="jersey-25-regular" style={{marginTop: '15px'}}>O que você quer construir?</label>
+                                <textarea
+                                    type="text"
+                                    placeholder="Digite aqui..."
+                                    className="Description"
+                                    value={description}
+                                    onChange={(e) => setDescription(e.target.value)}
+                                />
+
+                                <div className="SubmitButton">
+                                    <input
+                                        type="submit"
+                                        value="Enviar"
+                                    />
+                                </div>
+
+                            </form>
+                        </div>
+
+                    </div>
+                </React.Fragment>
+            )}
+
+            {isSmallScreen && (
+                <React.Fragment>
+                    <Helmet>
+                        <meta name="theme-color" content="black"/>
+                    </Helmet>
+                    <Navbar currentPage="contactpt" />
+                    <div className="ContentContactPage">
+                        <h1>Me contate</h1>
+
+                        <div className="FormsArea">
+                            <form className="ContactForm" onSubmit={sendEmail}>
+                                <label className="jersey-25-regular">Seu Nome</label>
+                                <input
+                                    type="text"
+                                    placeholder="Digite aqui..."
+                                    value={name}
+                                    onChange={(e) => setName(e.target.value)}
+                                />
+                                <label className="jersey-25-regular" style={{marginTop: '15px'}}>Seu Email</label>
+                                <input
+                                    type="email"
+                                    placeholder="ex: augusto@gmail.com"
+                                    value={email}
+                                    onChange={(e) => setEmail(e.target.value)}
+                                />
+
+                                <label className="jersey-25-regular" style={{marginTop: '15px'}}>O que você quer construir?</label>
+                                <textarea
+                                    type="text"
+                                    placeholder="Digite aqui..."
+                                    className="Description"
+                                    value={description}
+                                    onChange={(e) => setDescription(e.target.value)}
+                                />
+
+                                <div className="SubmitButton">
+                                    <input
+                                        type="submit"
+                                        value="Enviar"
+                                    />
+                                </div>
+
+                            </form>
+                        </div>
+
+                    </div>
+                </React.Fragment>
+            )}
         </div>
     );
 }

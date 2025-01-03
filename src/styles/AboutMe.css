@@ -113,7 +113,7 @@
 
 .SeeMore {
     width: 1222px;
-    margin-top: 10vh;
+    margin-top: 18vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -126,7 +126,7 @@
 
 .ArrowIcon {
     color: #fff;
-    margin-top: 20px;
+    margin-top: 10px;
     width: 54px;
     height: 54px;
 }
