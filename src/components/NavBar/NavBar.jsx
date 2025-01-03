@@ -5,8 +5,8 @@ import '../../styles/NavBar.css'
 import { useMediaQuery } from "react-responsive";
 
 export default function NavBar (props) {
-    const isLanguageText = useMediaQuery({query: 'only screen and (min-width: 1000px)'})
-    const isLanguageMenu = useMediaQuery({query: 'only screen and (max-width: 999px)'});
+    const isLanguageText = useMediaQuery({query: 'only screen and (min-width: 1101px)'})
+    const isLanguageMenu = useMediaQuery({query: 'only screen and (max-width: 1100px)'});
 
     const [isMenuVisible, setMenuVisible] = React.useState(false);
 
@@ -17,7 +17,7 @@ export default function NavBar (props) {
     return (
         <nav className="HomeNav">
             {isLanguageText && (
-                    <React.Fragment>
+                    <div className='ContainerNavBar'>
                         <ul>
                             <li style={{marginLeft: '0'}}>
                                 <Link
@@ -93,7 +93,7 @@ export default function NavBar (props) {
                                     className={props.currentPage.includes('pt') ? 'CurrentlyLanguage' : 'OtherLanguage'}>PT</Link>
                             </p>
                         </div>
-                    </React.Fragment>
+                    </div>
                 )}
             {isLanguageMenu && (
                 <React.Fragment>

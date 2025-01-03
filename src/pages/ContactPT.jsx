@@ -30,9 +30,8 @@ export default function Contact() {
             <Helmet>
                 <title>Contact Me | Augusto Ildefonso</title>
             </Helmet>
+            <Navbar currentPage="contactpt" />
             <div className="Content">
-                <Navbar currentPage="contactpt" />
-
                 <h1>Me contate</h1>
 
                 <div className="FormsArea">

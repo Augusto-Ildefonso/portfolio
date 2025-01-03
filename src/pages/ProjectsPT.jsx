@@ -17,58 +17,61 @@ export default function Project (){
             </Helmet>
 
             {isBigScreen && (
-                <div className='ContentAreaProjectPage'>
+                <React.Fragment>
                     <NavBar currentPage='projectspt'/>
+                    <div className='ContentAreaProjectPage'>
 
-                    <h1 className='ProjectsPageTitle'>Projetos</h1>
+                        <h1 className='ProjectsPageTitle'>Projetos</h1>
 
-                    <article className='CardsArea'>
-                        <ProjectCard
-                            image={'images/To-do_List_App.png'}
-                            title={'App de Tarefas'}
-                            content={'Organize sua rotina catalogando suas tarefas em quatro categorias: atrasadas, sem prazo, em andamento e concluídas. Construídas com React Native e NodeJS.'}
-                            githubText={'Veja no GitHub'}
-                            link={'https://github.com/Augusto-Ildefonso/Projeto-App-de-Tarefas'}
-                        />
+                        <article className='CardsArea'>
+                            <ProjectCard
+                                image={'images/To-do_List_App.png'}
+                                title={'App de Tarefas'}
+                                content={'Organize sua rotina catalogando suas tarefas em quatro categorias: atrasadas, sem prazo, em andamento e concluídas. Construídas com React Native e NodeJS.'}
+                                githubText={'Veja no GitHub'}
+                                link={'https://github.com/Augusto-Ildefonso/Projeto-App-de-Tarefas'}
+                            />
 
-                        <ProjectCard
-                            image={'https://raw.githubusercontent.com/Augusto-Ildefonso/Catraca-RFID/refs/heads/main/figs/circuito_rfid.jpg'}
-                            title={'Catraca RFID'}
-                            content={'Controle o acesso ao seu edifício com cartões RFID e essa catraca. O software foi construído com C++.'}
-                            githubText={'Veja no GitHub'}
-                            link={'https://github.com/Augusto-Ildefonso/Catraca-RFID'}
-                        />
+                            <ProjectCard
+                                image={'https://raw.githubusercontent.com/Augusto-Ildefonso/Catraca-RFID/refs/heads/main/figs/circuito_rfid.jpg'}
+                                title={'Catraca RFID'}
+                                content={'Controle o acesso ao seu edifício com cartões RFID e essa catraca. O software foi construído com C++.'}
+                                githubText={'Veja no GitHub'}
+                                link={'https://github.com/Augusto-Ildefonso/Catraca-RFID'}
+                            />
 
-                    </article>
-                </div>
+                        </article>
+                    </div>
+                </React.Fragment>
             )}
 
             {isMediumScreen && (
-                <div className='ContentAreaProjectPage'>
+                <React.Fragment>
                     <NavBar currentPage='projectspt'/>
+                    <div className='ContentAreaProjectPage'>
+                        <h1 className='ProjectsPageTitle'>Projetos</h1>
 
-                    <h1 className='ProjectsPageTitle'>Projetos</h1>
+                        <div className='CardsArea'>
+                            <ProjectCard
+                                image={'images/To-do_List_App.png'}
+                                title={'App de Tarefas'}
+                                content={'Organize sua rotina catalogando suas tarefas em quatro categorias: atrasadas, sem prazo, em andamento e concluídas. Construídas com React Native e NodeJS.'}
+                                githubText={'Veja no GitHub'}
+                                link={'https://github.com/Augusto-Ildefonso/Projeto-App-de-Tarefas'}
+                            />
 
-                    <div className='CardsArea'>
-                        <ProjectCard
-                            image={'images/To-do_List_App.png'}
-                            title={'App de Tarefas'}
-                            content={'Organize sua rotina catalogando suas tarefas em quatro categorias: atrasadas, sem prazo, em andamento e concluídas. Construídas com React Native e NodeJS.'}
-                            githubText={'Veja no GitHub'}
-                            link={'https://github.com/Augusto-Ildefonso/Projeto-App-de-Tarefas'}
-                        />
+                            <ProjectCard
+                                image={'https://raw.githubusercontent.com/Augusto-Ildefonso/Catraca-RFID/refs/heads/main/figs/circuito_rfid.jpg'}
+                                title={'Catraca RFID'}
+                                content={'Controle o acesso ao seu edifício com cartões RFID e essa catraca. O software foi construído com C++.'}
+                                githubText={'Veja no GitHub'}
+                                link={'https://github.com/Augusto-Ildefonso/Catraca-RFID'}
+                            />
 
-                        <ProjectCard
-                            image={'https://raw.githubusercontent.com/Augusto-Ildefonso/Catraca-RFID/refs/heads/main/figs/circuito_rfid.jpg'}
-                            title={'Catraca RFID'}
-                            content={'Controle o acesso ao seu edifício com cartões RFID e essa catraca. O software foi construído com C++.'}
-                            githubText={'Veja no GitHub'}
-                            link={'https://github.com/Augusto-Ildefonso/Catraca-RFID'}
-                        />
+                        </div>
 
                     </div>
-
-                </div>
+                </React.Fragment>
             )}
 
             {isSmallScreen && (

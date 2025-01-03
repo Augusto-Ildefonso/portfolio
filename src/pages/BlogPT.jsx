@@ -17,31 +17,30 @@ export default function Blog (){
             </Helmet>
 
             {isBigScreen && (
-                <div className='ContentAreaBlogPage'>
-
+                <React.Fragment>
                     <NavBar currentPage='blogpt'/>
+                    <div className='ContentAreaBlogPage'>
+                        <h1 className='PageTitleBlog'>Blog</h1>
 
-                    <h1 className='PageTitleBlog'>Blog</h1>
-
-                    <div className='BlogCardsArea'>
-                        <h2 className='NoPostsTitle'>Sem posts até o momento...</h2>
+                        <div className='BlogCardsArea'>
+                            <h2 className='NoPostsTitle'>Sem posts até o momento...</h2>
+                        </div>
                     </div>
-
-                </div>
+                </React.Fragment>
             )}
 
             {isMediumScreen && (
-                <div className='ContentAreaBlogPage'>
-
+                <React.Fragment>
                     <NavBar currentPage='blogpt'/>
+                    <div className='ContentAreaBlogPage'>
+                        <h1 className='PageTitleBlog'>Blog</h1>
 
-                    <h1 className='PageTitleBlog'>Blog</h1>
+                        <div className='BlogCardsArea'>
+                            <h2 className='NoPostsTitle'>Sem posts até o momento...</h2>
+                        </div>
 
-                    <div className='BlogCardsArea'>
-                        <h2 className='NoPostsTitle'>Sem posts até o momento...</h2>
                     </div>
-
-                </div>
+                </React.Fragment>
             )}
 
             {isSmallScreen && (

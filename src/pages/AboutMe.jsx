@@ -11,10 +11,8 @@ export default function AboutMe() {
             <Helmet>
                 <title>About Me | Augusto Ildefonso</title>
             </Helmet>
+            <NavBar currentPage='aboutme'/>
             <div className="ContentArea">
-
-                <NavBar currentPage='aboutme'/>
-
                 <article className='Introduction'>
                     <div className="TextAreaIntroduction">
                         <h1 id='TitleAboutMePage'>

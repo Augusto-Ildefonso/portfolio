@@ -17,58 +17,60 @@ export default function Project (){
             </Helmet>
 
             {isBigScreen && (
-                <div className='ContentAreaProjectPage'>
+                <React.Fragment>
                     <NavBar currentPage='projects'/>
+                    <div className='ContentAreaProjectPage'>
+                        <h1 className='ProjectsPageTitle'>Projects</h1>
 
-                    <h1 className='ProjectsPageTitle'>Projects</h1>
+                        <article className='CardsArea'>
+                            <ProjectCard
+                                image={'images/To-do_List_App.png'}
+                                title={'To-do List App'}
+                                content={'Organize your routine by cataloging your tasks in four categories: missed, no deadline, on progress and finished. Build with React Native and NodeJS.'}
+                                githubText={'See it on GitHub'}
+                                link={'https://github.com/Augusto-Ildefonso/Projeto-App-de-Tarefas'}
+                            />
 
-                    <article className='CardsArea'>
-                        <ProjectCard
-                            image={'images/To-do_List_App.png'}
-                            title={'To-do List App'}
-                            content={'Organize your routine by cataloging your tasks in four categories: missed, no deadline, on progress and finished. Build with React Native and NodeJS.'}
-                            githubText={'See it on GitHub'}
-                            link={'https://github.com/Augusto-Ildefonso/Projeto-App-de-Tarefas'}
-                        />
+                            <ProjectCard
+                                image={'https://raw.githubusercontent.com/Augusto-Ildefonso/Catraca-RFID/refs/heads/main/figs/circuito_rfid.jpg'}
+                                title={'RFID Turnstile'}
+                                content={'Control the access of your building with RFID Cards by using this turnstile. The software was built with C++.'}
+                                githubText={'See it on GitHub'}
+                                link={'https://github.com/Augusto-Ildefonso/Projeto-App-de-Tarefas'}
+                            />
 
-                        <ProjectCard
-                            image={'https://raw.githubusercontent.com/Augusto-Ildefonso/Catraca-RFID/refs/heads/main/figs/circuito_rfid.jpg'}
-                            title={'RFID Turnstile'}
-                            content={'Control the access of your building with RFID Cards by using this turnstile. The software was built with C++.'}
-                            githubText={'See it on GitHub'}
-                            link={'https://github.com/Augusto-Ildefonso/Projeto-App-de-Tarefas'}
-                        />
-
-                    </article>
-                </div>
+                        </article>
+                    </div>
+                </React.Fragment>
             )}
 
             {isMediumScreen && (
-                <div className='ContentAreaProjectPage'>
+                <React.Fragment>
                     <NavBar currentPage='projects'/>
+                    <div className='ContentAreaProjectPage'>
+                        <h1 className='ProjectsPageTitle'>Projects</h1>
 
-                    <h1 className='ProjectsPageTitle'>Projects</h1>
+                        <div className='CardsArea'>
+                            <ProjectCard
+                                image={'images/To-do_List_App.png'}
+                                title={'To-do List App'}
+                                content={'Organize your routine by cataloging your tasks in four categories: missed, no deadline, on progress and finished. Build with React Native and NodeJS.'}
+                                githubText={'See it on GitHub'}
+                                link={'https://github.com/Augusto-Ildefonso/Projeto-App-de-Tarefas'}
+                            />
 
-                    <div className='CardsArea'>
-                        <ProjectCard
-                            image={'images/To-do_List_App.png'}
-                            title={'To-do List App'}
-                            content={'Organize your routine by cataloging your tasks in four categories: missed, no deadline, on progress and finished. Build with React Native and NodeJS.'}
-                            githubText={'See it on GitHub'}
-                            link={'https://github.com/Augusto-Ildefonso/Projeto-App-de-Tarefas'}
-                        />
+                            <ProjectCard
+                                image={'https://raw.githubusercontent.com/Augusto-Ildefonso/Catraca-RFID/refs/heads/main/figs/circuito_rfid.jpg'}
+                                title={'RFID Turnstile'}
+                                content={'Control the access of your building with RFID Cards by using this turnstile. The software was built with C++.'}
+                                githubText={'See it on GitHub'}
+                                link={'https://github.com/Augusto-Ildefonso/Projeto-App-de-Tarefas'}
+                            />
 
-                        <ProjectCard
-                            image={'https://raw.githubusercontent.com/Augusto-Ildefonso/Catraca-RFID/refs/heads/main/figs/circuito_rfid.jpg'}
-                            title={'RFID Turnstile'}
-                            content={'Control the access of your building with RFID Cards by using this turnstile. The software was built with C++.'}
-                            githubText={'See it on GitHub'}
-                            link={'https://github.com/Augusto-Ildefonso/Projeto-App-de-Tarefas'}
-                        />
+                        </div>
 
                     </div>
-
-                </div>
+                </React.Fragment>
             )}
 
             {isSmallScreen && (

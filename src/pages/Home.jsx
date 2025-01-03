@@ -17,48 +17,52 @@ export default function Home () {
             </Helmet>
 
                 {isBigScreen && (
-                    <div className="ContentAreaHomePage">
+                    <React.Fragment>
                         <NavBar currentPage='home'/>
-
-                        <article className="ContentArticle">
-                            <div className='ContentLeft'>
-                                <h1 id='TitleHomePage'>Hi!<br/>I'm <em>Augusto</em>.</h1>
-                                <span id='TextHomePage'>
+                        <div className="ContentAreaHomePage">
+                            <article className="ContentArticle">
+                                <div className='ContentLeft'>
+                                    <h1 id='TitleHomePage'>Hi!<br/>I'm <em>Augusto</em>.</h1>
+                                    <span id='TextHomePage'>
                                     <p>I am a programmer passionate about software engineering and software
                                     development.</p>
                                 </span>
 
+                                    <div className="ButtonContainer">
+                                        <Button text='Discover my projects' link='projects'/>
+                                        <Button text='Message me' link='contact'/>
+                                    </div>
+                                </div>
+                                <div className="ContentRight">
+                                    <img src="images/Avatar.png" alt="Avatar" className="AvatarImage"/>
+                                </div>
+                            </article>
+                        </div>
+                    </React.Fragment>
+
+                )}
+
+                {isMediumScreen && (
+                    <React.Fragment>
+                        <NavBar currentPage='home'/>
+                        <div className="ContentAreaHomePage">
+
+                            <article className="ContentArticle">
+                                <div className="ImageContainerArticleHome">
+                                    <img src="images/Avatar.png" alt="Avatar" className="AvatarImage"/>
+                                </div>
+                                <span id='TitleHomePage'><h1>Hi! I'm <em>Augusto</em>.</h1></span>
+                                <span id='TextHomePage'>
+                                    <p>I am a programmer passionate about software engineering and software
+                                    development.</p>
+                            </span>
                                 <div className="ButtonContainer">
                                     <Button text='Discover my projects' link='projects'/>
                                     <Button text='Message me' link='contact'/>
                                 </div>
-                            </div>
-                            <div className="ContentRight">
-                                <img src="images/Avatar.png" alt="Avatar" className="AvatarImage"/>
-                            </div>
-                        </article>
-                    </div>
-                )}
-
-                {isMediumScreen && (
-                    <div className="ContentAreaHomePage">
-                        <NavBar currentPage='home'/>
-                        <article className="ContentArticle">
-                            <div className="ImageContainerArticleHome">
-                                <img src="images/Avatar.png" alt="Avatar" className="AvatarImage"/>
-                            </div>
-                            <span id='TitleHomePage'><h1>Hi! I'm <em>Augusto</em>.</h1></span>
-                            <span id='TextHomePage'>
-                                    <p>I am a programmer passionate about software engineering and software
-                                    development.</p>
-                            </span>
-                            <div className="ButtonContainer">
-                                <Button text='Discover my projects' link='projects'/>
-                                <Button text='Message me' link='contact'/>
-                            </div>
-                        </article>
-                    </div>
-
+                            </article>
+                        </div>
+                    </React.Fragment>
                 )}
 
             {isSmallScreen && (

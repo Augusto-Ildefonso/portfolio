@@ -109,7 +109,7 @@
     }
 
     .ProjectCardBase img {
-        width: 320px;
+        width: 100%;
         height: 215px;
         border-radius: 10px;
     }
