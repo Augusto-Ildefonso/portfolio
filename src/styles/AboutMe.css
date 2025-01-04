@@ -8,224 +8,590 @@
     font-style: normal;
 }
 
-.AboutMePage p{
-    color: #fff;;
-}
-
 .AboutMePage{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-bottom: 20px;
 }
 
-.AboutMePage .ContentArea{
-    display: flex;
-    width: 1222px;
-    height: 100%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: nowrap;
+.AboutMePage p{
+    color: #fff;;
 }
 
-.AboutMePage .ContentArea article{
-    width: 100%;
-    height: 100%;
-    margin-top: 55px;
+@media only screen and (min-width: 1500px) {
+    .AboutMePage .ContentArea{
+        display: flex;
+        width: 65%;
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+
+    .AboutMePage .ContentArea article{
+        width: 100%;
+        height: 100%;
+        margin-top: 55px;
+    }
+
+    .Introduction{
+        padding: 5px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        column-gap: 15px;
+    }
+
+    #TitleAboutMePage {
+        width: 100%;
+        font-size: 60px;
+        align-self: flex-start;
+        color: #B9EEE9;
+    }
+
+    #TextAboutMePage {
+        margin-top: 36px;
+        width: 95%;
+        font-size: 20px;
+        text-align: justify;
+    }
+
+    #LinkCV {
+        width: 100%;
+        margin-top: 50px;
+        color: #B9EEE9;
+        display: block;
+        transition: 0.3s;
+    }
+
+    #LinkCV:hover {
+        color: #fff;
+        transition: 0.3s;
+    }
+
+    .LinkIcon {
+        margin-left: 5px;
+        width: 20px;
+        height: 20px;
+        fill: #B9EEE9;
+        transition: 0.3s;
+    }
+
+    .ImageAreaIntroduction {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .ImageBackgroundAboutMePage{
+        max-width: 370px;
+        max-height: 370px;
+        border-radius: 50%;
+        background-color: #0F162A;
+        overflow: hidden;
+        box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.25);
+    }
+
+    .AvatarImage {
+        width: 400px;
+        height: 400px;
+        object-fit: cover;
+    }
+
+    .ButtonContainer {
+        display: flex;
+        width: 50%;
+        justify-content: space-between;
+    }
+
+    .SocialsCard {
+        margin-top: 25px;
+    }
+
+    .SeeMore {
+        width: 65%;
+        margin-top: 18vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .SeeMore span h1{
+        text-align: center;
+    }
+
+    .ArrowIcon {
+        color: #fff;
+        margin-top: 10px;
+        width: 54px;
+        height: 54px;
+    }
+
+    .History {
+        width: 65%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        text-align: justify;
+        row-gap: 50px;
+    }
+
+    .en{
+        font-size: 49px;
+        color: #B9EEE9;
+    }
+
+    .pt{
+        font-size: 38px;
+        color: #B9EEE9;
+    }
+
+    .FirstSteps {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        text-align: justify;
+        gap: 20px;
+    }
+
+    .FirstSteps p{
+        margin-top: 20px;
+    }
+
+    .FirstSteps .Text {
+        width: 65%;
+    }
+
+    .ImageHistory1 {
+        width: 45%;
+        height: 500px;
+        margin-left: 20px;
+    }
+
+    .ImageHistory2 {
+        width: 90%;
+        height: auto;
+        margin-left: 20px;
+    }
+
+    .ImageHistory3 {
+        width: 45%;
+        height: auto;
+        margin-left: 20px;
+    }
+
+    .MyExperience {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        text-align: justify;
+        gap: 20px;
+    }
+
+    .MyExperience p{
+        margin-top: 20px;
+    }
+
+    .TechStack {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        width: 100%;
+        text-align: left;
+        gap: 20px;
+    }
+
+    .TechStack ul {
+        margin: 20px 0 0 0;
+        padding: 0 20px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 20px;
+        list-style-type: none;
+        list-style-position: initial;
+    }
+
+    .TechStack li{
+        margin-left: 0px;
+    }
 }
 
-.Introduction{
-    padding: 5px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    column-gap: 15px;
+@media only screen and (min-width: 600px) and (max-width: 1499px) {
+    .AboutMePage .ContentArea {
+        margin-top: 40px;
+        display: flex;
+        width: 65%;
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+
+    .Introduction {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .ImageAreaIntroduction {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 35px;
+    }
+
+    .ImageBackgroundAboutMePage{
+        max-width: 370px;
+        max-height: 370px;
+        border-radius: 50%;
+        background-color: #0F162A;
+        overflow: hidden;
+        box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.25);
+    }
+
+    .AvatarImage {
+        width: 400px;
+        height: 400px;
+        object-fit: cover;
+    }
+
+    .TextAreaIntroduction {
+        margin-top: 40px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: center;
+        row-gap: 30px;
+    }
+
+    #TitleAboutMePage {
+        width: 100%;
+        font-size: 60px;
+        align-self: flex-start;
+        text-align: center;
+        line-height: 60px;
+        color: #B9EEE9;
+    }
+
+    #LinkCV {
+        width: 100%;
+        color: #B9EEE9;
+        display: block;
+        transition: 0.3s;
+    }
+
+    #LinkCV:hover {
+        color: #fff;
+        transition: 0.3s;
+    }
+
+    .LinkIcon {
+        margin-left: 5px;
+        width: 20px;
+        height: 20px;
+        fill: #B9EEE9;
+        transition: 0.3s;
+    }
+
+    .History {
+        margin-top: 8vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .FirstSteps {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        row-gap: 30px;
+    }
+
+    .FirstSteps h1 {
+        font-size: 40px;
+        line-height: 50px;
+        color: #B9EEE9;
+        text-align: center;
+    }
+
+    .FirstSteps .Text {
+        margin-top: 20px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .MyExperience {
+        margin-top: 10vh;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        row-gap: 30px;
+    }
+
+    .MyExperience h1 {
+        font-size: 40px;
+        line-height: 50px;
+        color: #B9EEE9;
+        text-align: center;
+    }
+
+    .MyExperience .ImageHistory2 {
+        max-width: 100%;
+    }
+
+    .MyExperience .Text {
+        margin-top: 20px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .TechStack {
+        margin-top: 10vh;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        row-gap: 30px;
+    }
+
+    .TechStack h1 {
+        font-size: 40px;
+        line-height: 50px;
+        color: #B9EEE9;
+        text-align: center;
+    }
+
+    .TechStack .ImageHistory3 {
+        max-width: 50%;
+    }
+
+    .TechStack ul {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 30px;
+        list-style-type: none;
+        list-style-position: initial;
+    }
+
+    .TechStack li{
+        width: 100%;
+    }
 }
 
-#TitleAboutMePage {
-    width: 730px;
-    font-size: 60px;
-    align-self: flex-start;
-    color: #B9EEE9;
-}
+@media only screen and (max-width: 599px) {
+    .AboutMePage .ContentArea {
+        margin-top: 40px;
+        display: flex;
+        width: 90%;
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
 
-#TextAboutMePage {
-    margin-top: 36px;
-    width: 700px;
-    font-size: 20px;
-    text-align: justify;
-}
+    .Introduction {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
 
-#LinkCV {
-    width: 205px;
-    margin-top: 50px;
-    color: #B9EEE9;
-    display: block;
-    transition: 0.3s;
-}
+    .ImageAreaIntroduction {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 35px;
+    }
 
-#LinkCV:hover {
-    color: #fff;
-    transition: 0.3s;
-}
+    .ImageBackgroundAboutMePage{
+        max-width: 370px;
+        max-height: 370px;
+        border-radius: 50%;
+        background-color: #0F162A;
+        overflow: hidden;
+        box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.25);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+    }
 
-.LinkIcon {
-    margin-left: 5px;
-    width: 20px;
-    height: 20px;
-    fill: #B9EEE9;
-    transition: 0.3s;
-}
+    .AvatarImage {
+        width: 400px;
+        height: 400px;
+        object-fit: cover;
+    }
 
-.ImageAreaIntroduction {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
+    .TextAreaIntroduction {
+        margin-top: 40px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: center;
+        row-gap: 30px;
+    }
 
-.ImageBackgroundAboutMePage{
-    width: 370px;
-    height: 370px;
-    border-radius: 50%;
-    background-color: #0F162A;
-    overflow: hidden;
-    box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.25);
-}
+    #TitleAboutMePage {
+        width: 100%;
+        font-size: 60px;
+        align-self: flex-start;
+        text-align: center;
+        line-height: 60px;
+        color: #B9EEE9;
+    }
 
-.AvatarImage {
-    width: 400px;
-    height: 400px;
-    object-fit: cover;
-}
+    #LinkCV {
+        width: 100%;
+        color: #B9EEE9;
+        display: block;
+        transition: 0.3s;
+    }
 
-.ButtonContainer {
-    display: flex;
-    width: 550px;
-    justify-content: space-between;
-}
+    #LinkCV:hover {
+        color: #fff;
+        transition: 0.3s;
+    }
 
-.SocialsCard {
-    margin-top: 25px;
-}
+    .LinkIcon {
+        margin-left: 5px;
+        width: 20px;
+        height: 20px;
+        fill: #B9EEE9;
+        transition: 0.3s;
+    }
 
-.SeeMore {
-    width: 1222px;
-    margin-top: 18vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+    .History {
+        margin-top: 8vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
 
-.SeeMore span h1{
-    text-align: center;
-}
+    .FirstSteps {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        row-gap: 30px;
+    }
 
-.ArrowIcon {
-    color: #fff;
-    margin-top: 10px;
-    width: 54px;
-    height: 54px;
-}
+    .FirstSteps h1 {
+        font-size: 40px;
+        line-height: 50px;
+        color: #B9EEE9;
+        text-align: center;
+    }
 
-.History {
-    width: 1222px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    width: 1222px;
-    text-align: justify;
-    row-gap: 50px;
-}
+    .FirstSteps .Text {
+        margin-top: 20px;
+        width: 100%;
+        text-align: center;
+    }
 
-.en{
-    font-size: 49px;
-    color: #B9EEE9;
-}
+    .MyExperience {
+        margin-top: 10vh;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        row-gap: 30px;
+    }
 
-.pt{
-    font-size: 38px;
-    color: #B9EEE9;
-}
+    .MyExperience h1 {
+        font-size: 30px;
+        line-height: 50px;
+        color: #B9EEE9;
+        text-align: center;
+    }
 
-.FirstSteps {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    text-align: justify;
-    gap: 20px;
-}
+    .MyExperience .ImageHistory2 {
+        max-width: 100%;
+    }
 
-.FirstSteps p{
-    margin-top: 20px;
-}
+    .MyExperience .Text {
+        margin-top: 20px;
+        width: 100%;
+        text-align: center;
+    }
 
-.FirstSteps .Text {
-    width: 65%;
-}
+    .TechStack {
+        margin-top: 10vh;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        row-gap: 30px;
+    }
 
-.ImageHistory1 {
-    width: 45%;
-    height: 500px;
-    margin-left: 20px;
-}
+    .TechStack h1 {
+        font-size: 40px;
+        line-height: 50px;
+        color: #B9EEE9;
+        text-align: center;
+    }
 
-.ImageHistory2 {
-    width: 90%;
-    height: auto;
-    margin-left: 20px;
-}
+    .TechStack .ImageHistory3 {
+        max-width: 50%;
+    }
 
-.ImageHistory3 {
-    width: 45%;
-    height: auto;
-    margin-left: 20px;
-}
+    .TechStack ul {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 30px;
+        list-style-type: none;
+        list-style-position: initial;
+    }
 
-.MyExperience {
-    margin-top: 50px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    text-align: justify;
-    gap: 20px;
-}
-
-.MyExperience p{
-    margin-top: 20px;
-}
-
-.TechStack {
-    margin-top: 50px;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-between;
-    width: 100%;
-    text-align: left;
-    gap: 20px;
-}
-
-.TechStack ul {
-    margin: 20px 0 0 0;
-    padding: 0 20px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    row-gap: 20px;
-    list-style-type: circle;
-    list-style-position: initial;
-}
-
-.TechStack li{
-    margin-left: 0px;
+    .TechStack li{
+        width: 100%;
+    }
 }
